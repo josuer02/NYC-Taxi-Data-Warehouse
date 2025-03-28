@@ -125,7 +125,7 @@ Esta taxonomía bien definida facilita:
 
 La implementación del data warehouse se realizó en MySQL mediante scripts SQL bien estructurados. A continuación, se presenta un extracto del script principal que crea todas las tablas necesarias:
 
-### Extracto de CreateTablesTaxi.sql
+### Extracto de [CreateTablesTaxi.sql]
 
 ```sql
 -- Script de creación de esquema para NYC Yellow Taxi Data Warehouse
