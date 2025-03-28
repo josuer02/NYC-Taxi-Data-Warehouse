@@ -190,6 +190,8 @@ El Diagrama Entidad-Relación (DER) fue generado utilizando MySQL Workbench a pa
 
 El DER proporciona una visualización clara de la estructura del data warehouse, facilitando la comprensión de las relaciones entre las diferentes entidades y la estructura general del modelo estrella implementado.
 
+Imagen del [DER](DER.png)
+
 ## 7. Proceso ETL
 
 El proceso de Extracción, Transformación y Carga (ETL) se implementó en tres fases principales, utilizando scripts SQL específicos para cada etapa.
