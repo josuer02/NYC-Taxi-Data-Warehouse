@@ -33,7 +33,7 @@ La elección de este dataset se justifica por los siguientes motivos:
 1. **Relevancia empresarial**: Los datos de taxis representan un caso de uso real con aplicaciones prácticas en optimización de rutas, análisis de demanda y estrategias de precios.
 2. **Riqueza de dimensiones**: El conjunto de datos ofrece múltiples dimensiones (tiempo, ubicación, proveedor, tipo de pago) que permiten crear un modelo dimensional completo.
 3. **Volumen adecuado**: Con millones de registros mensuales, proporciona un volumen suficiente para demostrar las capacidades de un data warehouse sin ser inmanejable.
-4. **Disponibilidad pública**: Los datos son de acceso público a través del portal NYC Open Data (https://data.cityofnewyork.us), lo que facilita su reproducibilidad y verificación.
+4. **Disponibilidad pública**: Los datos son de acceso público a través del portal NYC Open Data (https://data.cityofnewyork.us), o de donde lo encontre en la plataforma Kaggle (https://www.kaggle.com/datasets/microize/newyork-yellow-taxi-trip-data-2020-2019?select=yellow_tripdata_2019-01.csv) esto facilita su reproducibilidad y verificación.
 5. **Actualizaciones periódicas**: Al ser actualizado mensualmente, permite diseñar un sistema escalable para cargas incrementales.
 
 ## 2. Identificación de Dimensiones y Tablas de Hechos
