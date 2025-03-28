@@ -174,7 +174,7 @@ El script completo incluye la definición detallada de todas las tablas con:
 
 ## 6. Diagrama Entidad-Relación
 
-El Diagrama Entidad-Relación (DER) fue generado utilizando MySQL Workbench a partir del script `ScriptDER.sql`. Este script define todas las tablas y sus relaciones para generar una representación visual del modelo.
+El Diagrama Entidad-Relación (DER) fue generado utilizando MySQL Workbench a partir del script [ScriptDER](ScriptDER.sql). Este script define todas las tablas y sus relaciones para generar una representación visual del modelo.
 
 ### Características del DER
 
@@ -196,7 +196,7 @@ El proceso de Extracción, Transformación y Carga (ETL) se implementó en tres 
 
 ### 7.1 Carga de la Tabla Stage
 
-La primera fase del proceso ETL consiste en cargar los datos desde el archivo CSV original a la tabla de staging, utilizando el script `CreateStageTable.sql`:
+La primera fase del proceso ETL consiste en cargar los datos desde el archivo CSV original a la tabla de staging, utilizando el script [CreateStageTable](CreateStageTable.sql):
 
 ```sql
 USE nyc_taxi_dw;
@@ -238,7 +238,7 @@ Este script realiza las siguientes operaciones:
 
 ### 7.2 Carga de Dimensiones
 
-La segunda fase consiste en poblar las tablas de dimensiones con datos limpios y transformados, utilizando el script `CreateDimFacts.sql`. Para la dimensión tiempo, se implementó un procedimiento almacenado especial:
+La segunda fase consiste en poblar las tablas de dimensiones con datos limpios y transformados, utilizando el script [CreateDimFacts](CreateDimFacts.sql). Para la dimensión tiempo, se implementó un procedimiento almacenado especial:
 
 ```sql
 -- Procedimiento para generar datos de tiempo para un rango de fechas
@@ -282,7 +282,7 @@ ON DUPLICATE KEY UPDATE
 
 ### 7.3 Carga de la Tabla de Hechos
 
-Debido a problemas de rendimiento con grandes volúmenes de datos, se desarrolló un script optimizado (`FillDimFacts.sql`) para cargar la tabla de hechos en pequeños lotes:
+Debido a problemas de rendimiento con grandes volúmenes de datos, se desarrolló un script optimizado [FillDimFacts](FillDimFacts.sql) para cargar la tabla de hechos en pequeños lotes:
 
 ```sql
 -- Crear tabla temporal para IDs específicos
