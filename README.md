@@ -1,6 +1,6 @@
 # Modelado y Carga de Datos en un Data Warehouse: NYC Yellow Taxi
 
-_Diagrama Entidad-Relación del Data Warehouse para NYC Yellow Taxi_
+_Data Warehouse para NYC Yellow Taxi_
 
 ## Índice
 
